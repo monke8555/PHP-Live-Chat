@@ -1,0 +1,171 @@
+* {
+  font-family: Tahoma;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 1em;
+  font-size: 1em;
+  border: none;
+  border-radius : 1.5625em;
+  positon: absolute;
+  margin-top: 0.5em;
+  position: absolute;
+}
+
+.dropup-content {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 10em;
+  bottom: 3.125em;
+  z-index: 100;
+  border-radius: 1.5625em;
+  position: absolute;
+  margin-bottom: 1em;
+}
+
+.dropup-content a {
+  color: black;
+  padding: 0.75em 1em;
+  display: block;
+  margin-bottom: 1em;
+}
+
+#dc a {
+  color: black;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0em;
+}
+
+.dropup-content a:hover {background-color: #ccc}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 1em;
+  border: 0.1875em solid #f1f1f1;
+  z-index: 9;
+  height: -6.25em;
+  width: 13.75em;
+}
+
+.form-container {
+  max-width: 31.25em;
+  padding: 0.625em;
+  background-color: white;
+}
+
+.cancelbtn {
+  background-color: gray;
+  width: 12.5em;
+  height: 3.125em;
+  font-family: Tahoma;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+  border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+  border-image: none;
+  border-radius: 0.375em;
+  border-style: none none none none;
+}
+
+.vertical-menu {
+  width: 12.5em;
+  height: 9.375em;
+  overflow-y: auto;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 0.75em;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+#msg {
+  position: relative
+  z-index: -10;
+  font-family: 'Tahoma'
+  font-weight: lighter;
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+  border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+  border-image: none;
+  border-radius: 0.375em;
+  border-style: none solid solid none;
+  border-width: medium 0.0625em 0.0625em medium;
+  box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.12) inset;
+  font-size: 1em;
+  line-height: 1.4em;
+  transition: background-color 0.2s ease 0s;
+  background-color: silver;
+  display: inline;
+}
+
+#msg:focus {
+  background-color: gainsboro;
+}
+
+#imgurl {
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 gainsboro;
+  border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+  border-image: none;
+  border-style: none none none none;
+}
+
+.content {
+  display: inline-flex;
+}
+
+.lb {
+  background-image: linear-gradient(to bottom right, #ccf4ff, #00c8ff);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+html {
+  height: 100%;
+}
