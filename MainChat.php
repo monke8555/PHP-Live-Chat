@@ -16,7 +16,7 @@
       echo '<meta http-equiv = "refresh" content = "0; url = /Chat.php?unswr=yes">';
       // So that no one can use without password
       // unswr means username, password wrong
-      // see Chat.php:41; it says wrong password or username if it is set
+      // see Chat.php:58; it says wrong password or username if it is set
     }
     ?>
     <script>
@@ -42,7 +42,7 @@
     <script src="NonHTML/JS/main.js"></script>
   </head>
   <body class="lb" onunload="set()">
-  <iframe src="/msgs.html" width="100%" height="350" frameBorder="0"></iframe>
+  <iframe src="msgs.html" width="100%" height="350" frameBorder="0"></iframe>
   <!-- it uses iframes for messages -->
   <form method="post" id="chat">
 

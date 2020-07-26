@@ -16,4 +16,6 @@ This is a chat project I made and needs only a few things.
 
 1. Upload all files to any directory
 2. Change the following lines according to your configuration:
-   * 
+   * MainChat.php:130
+   * SignUp.php:70
+3. And you're ready to go!

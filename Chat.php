@@ -22,6 +22,19 @@
         par2.setAttribute('onClick', 'show(this)');
       }
     </script>
+    <style>
+    a {
+      color: black;
+      text-decoration: none;
+      font-size: 12px;
+      color: #484848;
+      font-family: monospace;
+    }
+
+    .crt {
+      text-align: center;
+    }
+    </style>
     <title>Login</title>
   </head>
   <body class="lb">
@@ -36,41 +49,13 @@
   </div>
   <br>
   <input id="submit" type="submit" style="display:block;margin-left:auto;margin-right:auto;" value="Log In">
+  <div class="crt">
+    <a href="SignUp.php">CREATE AN ACCOUNT</a>
+  </div>
   </form>
   <?php
     if (isset($_GET['unswr'])) {
       echo "<p style='font-size:50px;'><b><i>You have entered a wrong username or password. Please try again.</i></b></p>";
-    }
-
-    // Create connection
-    $conn = new mysqli("localhost", "root", "password", "world");
-
-    // Check connection
-    if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-    } else {
-      echo "<js>";
-      echo "\n<script>console.log('Connection to MySQL Database Successful')</script>";
-      echo "\n</js>";
-      echo "\n";
-    }
-    $unp = $_POST['un'];
-    $query = mysqli_query($conn, "SELECT UN, PWD FROM chat WHERE UN = '$unp'");
-    while ($row = mysqli_fetch_assoc($query)) {
-        if (password_verify($_POST['pwd'], $row["PWD"])) {
-          echo '<p style="text-align:center;font-size:25px;">Correct Password! Redirecting.</p>';
-          sleep(2.5);
-          echo '<form method="post" action="/MainChat.php"><input type="hidden" value="'.$row["UN"].'" name="un"><input type="submit" id="submitb"></form>';
-          echo '<script>document.getElementById("submitb").click()</script>';
-        } else {
-          echo "Wrong Password or Username!";
-        }
-    }
-    if ($query) {
-      mysqli_num_rows($query);
-      echo "<script>console.log(\"Success\");</script>";
-    } else {
-      echo "<script>console.log(\"Error: " . $sql . mysqli_error($conn)."\");</script>";
     }
   ?>
   </body>
